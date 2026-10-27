@@ -31,6 +31,9 @@ class JobSpec:
     timeout_s: int = 60
     client_request_id: Optional[str] = None  # para envios idempotentes
 
+class JobNotFound(KeyError):
+    pass
+
 
 @dataclass
 class JobStatus:
