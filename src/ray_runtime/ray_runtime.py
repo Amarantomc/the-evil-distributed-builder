@@ -4,7 +4,7 @@ from typing import Dict, Optional
 from api.job_status import JobSpec
 from domain.i_runtime import AttemptResult, Runtime
 import ray
-from ray_runtime import run_attempt
+from ray_runtime.executor import run_attempt
 from ray_runtime.error_mapping import map_exception
 
 class RayRuntime (Runtime):
